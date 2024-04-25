@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+.headers { grid-area: header; }
+.gallary { grid-area: main;}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main main main';
+    padding: 20px;
+}
+body h1 {
+    text-align: center;
+}
+.gallary img {
+    width: 350px;
+}
+.gallary {
+    text-align: center;
+}

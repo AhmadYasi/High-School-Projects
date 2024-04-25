@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* Navigation and links */
+nav {
+    display: flex;
+    background-color: #4CAF50;
+    padding: 20px;
+}
+nav h1 {
+    justify-content: left;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 5px;
+    left: 450px;
+    justify-content: right;
+}
+nav ul li {
+    padding-left: 25px; 
+    flex-direction: row;
+    justify-content: right;
+}
+nav ul li a {
+    text-decoration: none;  
+    color: white;
+}
+nav ul li a:hover {
+    color: black;
+}
+
+
+/* documentation contents */
+img {
+    position: relative;
+    float: left;
+    width: 300px;
+    border: 2px solid black;
+    margin: 10px;   
+}
+.document {
+    margin: 10px; 
+}

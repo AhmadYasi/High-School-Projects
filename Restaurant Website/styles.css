@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+/* The first row */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.logo h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+    font-size: 45px;
+}
+.logo h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* The second row */
+.navigation {
+    background-color: #808080;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.navigation img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+}
+.navigation ul li {
+    list-style: none;
+    margin: 20px 20px 5px 0;
+    color: white;
+}
+.navigation ul li:hover {
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* The third row */
+.main {
+    border: 2px solid black;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-image: url(img/Burger.jpg);
+    background-size: cover;
+}
+.main h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.main p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.main p:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.feats {
+    display: flex;
+    flex-direction: row;
+}
+.feat {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px black;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    
+}
+.feat.one {
+    background-image: url(img/chief.png);
+    background-size: cover;
+}
+.feat.one p {
+    display: inline;
+    position: relative;
+    top: 90%;
+    left: 30%;
+}
+.feat.two {
+    background-image: url(img/pizza.jpg);
+    background-size: cover;
+}
+.feat.two p {
+    display: inline;
+    position: relative;
+    top: 90%;
+    left: 30%;
+}
+
+
+
+/* The fourth row */
+.features {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.order {
+    
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+.order p {
+    display: inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    position: relative;
+    top: 90%;
+    left: 40%;
+}
+.order p:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.order.afghan1 {
+    background-image: url(img/afghanburger.jpeg);
+    background-size: cover;
+}
+.order.afghan2 {
+    background-image: url(img/kabab.jpg);
+    background-size: cover;
+}
+.order.afghan3 {
+    background-image: url(img/palaw.jpg);
+    background-size: cover;
+}
+
+
+
+/* Responsive code  */
+@media only screen and (max-width: 800px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }

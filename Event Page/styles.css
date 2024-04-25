@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+/* the left description */
+.info {
+    background-color: white;
+    opacity: .5;
+    padding: 40px;
+    height: min-content;
+    width: 650px;
+    margin: 50px;
+}
+.info h1 {
+    font-size: 45px;
+}
+.info:hover {
+    background-color: white;
+    opacity: 3;
+}
+
+
+
+/* the right events */
+.events {
+    background-color: rgba(255, 255, 255, 0.5); /* Using RGBA for transparency */
+   
+    width: 790px;
+    height: 694px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.event:hover {
+    background-color: pink;
+}
+.events::content {
+    background-color: white;
+    opacity: .5;
+}
+.events1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    background-color: white;
+   
+}
+.event1 {
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    opacity: 9;
+    position: relative;
+    margin: 1px;
+    background-color: rgba(0, 0, 0, 0.9); /* Example of using RGBA for black with slight transparency */
+    color: white;
+    
+}
+.event1 h2 {
+    font-size: 80px;
+    font-weight: bold;
+}
+.event1 h4 {
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+.event2 {
+    margin: 25px;
+    
+}

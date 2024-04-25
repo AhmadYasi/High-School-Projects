@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>T55rex Survey Form</title>
+    </head>
+    <body>
+        <h1>T55REX Survey Form</h1>
+        <main>
+            <label class="label" name="name">Name: </label>
+            <input type="text" class="first" placeholder="Enter your name" name="name">
+            <label class="label" name="email">Email</label>
+            <input type="email" class="first" placeholder="Enter your email" name="email">
+            <label class="label" name="number">Age</label>
+            <input type="number" class="first" placeholder="Enter your age" name="number">
+            <label class="label">Which option best describes you?</label>
+            <select>
+                <option>Gamer</option>
+                <option>Programmer</option>
+                <option>Editor</option>
+                <option>Other</option>
+            </select>
+            <label class="label">Would you recommend T55Rex to a friend?</label>
+            <label id="yes"> <input type="radio" name="recommend" for="yes">Yes</label>
+            <label id="no"><input type="radio" name="recommend" for="no">No</label>
+            <label id="maybe"><input type="radio" name="recommend" for="maybe">Maybe</label>
+            <label class="label">Language and Skills knowns (Check all that apply)</label>
+            <label><input type="checkbox">C</label>
+            <label><input type="checkbox">C++</label>
+            <label><input type="checkbox">C#</label>
+            <label><input type="checkbox">Java</label>
+            <label><input type="checkbox">Python</label>
+            <label><input type="checkbox">JavaScript</label>
+            <label><input type="checkbox">React</label>
+            <label><input type="checkbox">Angular</label>
+            <label><input type="checkbox">Django</label>
+            <label><input type="checkbox">Spring</label>
+
+            <label class="label">Any comments or suggestions</label>
+            <textarea rows="4" cols="40"></textarea>
+
+            <input type="submit" class="button">
+        </main>
+    </body>
+</html>

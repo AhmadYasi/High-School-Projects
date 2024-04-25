@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Music Player</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <img src="img/kazuya.png" alt="kazuya" class="kazuya">
+        <img src="img/jin.png" alt="jin" class="jin">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <audio id="mysound">
+            <source src="track/stage.mp3"  type="audio/mp3">
+        </audio>
+        <div class="media">
+            <h4>Click here to listen to the Music</h4>
+            <img src="img/player/play.png" id="icon" />
+        </div>
+
+        <script>
+            let mysound = document.getElementById("mysound");
+            let icon = document.getElementById("icon");
+            icon.onclick = function () {
+                if (mysound.paused) {
+                    mysound.play();
+                    icon.src = "img/player/play.png"
+                } else {
+                    mysound.pause();
+                    icon.src = "img/player/pause.png"
+                }
+            }
+        </script>
+    </body>
+</html>

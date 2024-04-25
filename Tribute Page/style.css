@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #00FA9A;
+}
+
+
+
+/* For title, picture and brief into */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 20% 0% 20%;
+}
+main h1 {
+    font-size: 50px;;
+    text-shadow: 3px 3px 5px white;
+    
+}
+
+
+/* For the content of the body */
+.body {
+    background-color: #0CDE89;
+    margin: 5% 20% 0% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8%;
+    box-shadow: 2px 2px 5px rgb(247, 247, 170);
+}
+.body h3 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+}
+.body p {
+    margin: 2% 10% 2% 10%;
+    font-size: large;   
+}
+
+
+/* For the content of the footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0% 20% 0% 20%;
+    font-size:medium
+}
+.footer span {
+    font-size:small;
+}

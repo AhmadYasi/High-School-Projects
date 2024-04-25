@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: url("img/meeting.jpg") top right no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* First person's part */
+.firstcenter {
+    /* the div styling part */
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    /* the div positioning part */
+    position: relative;
+    top: 300px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+.firstpara {
+    /* the div styling part */
+    background-color: black;
+    color: white;
+    padding: 25px;
+    
+    /* the div positioning part */
+    position: relative;
+    top: 550px;
+}
+
+
+/* Project part */
+.secondcenter {
+    /* the div styling part */
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    /* the div positioning part */
+    position: relative;
+    top: 900px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secondpara {
+    /* the div styling part */
+    background-color: black;
+    color: white;
+    padding: 25px;
+    
+    /* the div positioning part */
+    position: relative;
+    top: 1200px;
+    text-align: center;
+}
+
+
+/* Achievment part */
+.thirdcenter {
+    /* the div styling part */
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    /* the div positioning part */
+    position: relative;
+    top: 1600px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.thirdpara {
+    /* the div styling part */
+    background-color: black;
+    color: white;
+    padding: 25px;
+    
+    /* the div positioning part */
+    position: relative;
+    top: 1900px;
+    text-align: center;
+}
