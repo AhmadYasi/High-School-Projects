@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    overflow: hidden; 
+    background-image: url(bg.png);
+    background-size: cover;
+    font-family: 'Monastery', sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2; 
+    padding: 20px;
+}
+
+@font-face {
+    font-family: 'Monastery';
+    src: url('fonts/Monastic.otf') format('opentype'),
+         url('fonts/Monastic.ttf') format('truetype'),
+         url('fonts/Monastic.woff') format('woff'),
+         url('fonts/Monastic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* heading */
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.heading h1 {
+    
+    background-color: yellowgreen;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ac8550;
+}
+
+/* Bell */
+/* Bell Wood */
+.bell {
+    position: fixed;
+    top: 150px;
+    left: 20px;
+}
+.bell h1 {
+    
+    text-align: center;
+    background-color: yellow;
+    padding: 5px;
+}
+.bell .wood .wood1, .wood2 {
+    border: 1px solid #ac8550;
+    width: 100px;
+    min-height: 60px;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+    display: inline-block;
+    margin-right: -4px;
+    background: 
+        linear-gradient(135deg, transparent 5px, black 5px, black 10px, transparent 10px),
+        linear-gradient(-135deg, transparent 5px, black 5px, black 10px, transparent 10px),
+        #D8AA6A;
+    background-size: 15px 15px;
+    box-shadow: 
+        inset -2px -2px 0 0 black,
+        inset 2px 2px 0 0 black;
+}
+.bell .wood .wood1 {
+    border-right: 2px solid black;
+}
+.bell .wood .wood2 {
+    border-left: 2px solid black;
+}
+
+/* Bell Body */
+.bellbody {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    border: 2px solid black;
+    border-top-left-radius: 50% 80px;
+    border-top-right-radius: 50% 80px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom: none;
+    background-color: #D8AA6A;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    left: 25%;
+}
+
+
+/* Bell swinger */
+.swinger {
+    position:relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    background-color: #D8AA6A;
+    border-radius: 50%;
+    left: 35%;
+    bottom: 5px;
+    z-index: -1;
+}
+
+
+/* Animations for Bell */
+.bell:hover .wood .wood1, 
+.bell:hover .wood .wood2,
+.bell:hover .bellbody,
+.bell:hover .swinger {
+    animation: bell-pop 0.3s ease;
+    border-color: #f7ca18; 
+}
+@keyframes bell-pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bell:hover {
+    cursor: pointer;
+}
+
+
+/* Drum */
+.headingdrum {
+    position: fixed;
+    text-align: center;
+    background-color: yellow;
+    padding: 5px;
+    left: 1350px;
+    top: 145px;
+}
+.drum {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: #8B4513; 
+    border-radius: 5%;
+    margin: 50px auto;
+    position: fixed;
+    top: 150px;
+    left: 1300px;
+    cursor: pointer; 
+}
+
+
+.drum .head {
+    width: 200px;
+    height: 50px;
+    background-color: white; 
+    border-radius: 50%;
+    box-shadow: black;
+    position: absolute;
+    top: -15px;
+}
+
+.drum .body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #8B4513;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.drum .body::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background: radial-gradient(#654321, #8B4513);
+    border-radius: 50%;
+}
+
+.drum .body::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #8B4513;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.drum:hover .head,
+.drum:hover .body {
+    animation: drum-pop 0.3s ease;
+    box-shadow: 0 0 10px yellow(0, 0, 0, 0.5);
+    border-color: #f7ca18; 
+}
+
+@keyframes drum-pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Piano */
+.piano {
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    left: 480px;
+    top: 150px;
+}
+.piano h1 {
+    background-color: yellow;
+    color: black;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #ac8550;
+}
+ 
+.piano-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.piano-keys-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+ 
+.piano-keys {
+    width: 3rem;
+    cursor: pointer;
+    position: relative;
+    height: 20rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+ 
+.white-key {
+    background-color: #fff;
+}
+ 
+.black-key {
+    width: 1.5rem;
+    height: 10rem;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #000;
+    z-index: 2;
+    margin: 0 -20px 0 -20px;
+}
+.piano-keys:hover {
+    animation: bell-pop 0.3s ease;
+    border-color: #f7ca18; 
+}

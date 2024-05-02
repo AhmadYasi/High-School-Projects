@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Instrument</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="container">
+        <div class="heading">
+            <h1>Medieval instruments</h1>
+        </div>
+        <div class="bell" onclick="playBellSound()">
+            <h1>Church Bells</h1>
+            <div class="wood">
+                <div class="wood1"></div>
+                <div class="wood2"></div>
+            </div>
+            <div class="bellbody">
+            </div>
+            <div class="swinger">
+            </div>
+        </div>
+        <h1 class="headingdrum">Drums</h1>
+        <div class="drum" onclick="playDrumSound()">
+            
+            <div class="head"></div>
+            <div class="body"></div>
+        </div>
+
+        <div class="piano">
+            <h1>Piano</h1>
+            <ul class="piano-keys-list">
+                <li class="piano-keys white-key" data-list="01" onclick="playPianoSound('Sound/1.wav')"></li>
+        <li class="piano-keys black-key" data-list="02" onclick="playPianoSound('Sound/2.wav')"></li>
+        <li class="piano-keys white-key" data-list="03" onclick="playPianoSound('Sound/3.wav')"></li>
+        <li class="piano-keys black-key" data-list="04" onclick="playPianoSound('Sound/4.wav')"></li>
+        <li class="piano-keys white-key" data-list="05" onclick="playPianoSound('Sound/5.wav')"></li>
+        <li class="piano-keys black-key" data-list="06" onclick="playPianoSound('Sound/6.wav')"></li>
+        <li class="piano-keys white-key" data-list="07" onclick="playPianoSound('Sound/7.wav')"></li>
+        <li class="piano-keys white-key" data-list="08" onclick="playPianoSound('Sound/8.wav')"></li>
+        <li class="piano-keys black-key" data-list="09" onclick="playPianoSound('Sound/9.wav')"></li>
+        <li class="piano-keys white-key" data-list="10" onclick="playPianoSound('Sound/10.wav')"></li>
+        <li class="piano-keys black-key" data-list="11" onclick="playPianoSound('Sound/11.wav')"></li>
+        <li class="piano-keys white-key" data-list="12" onclick="playPianoSound('Sound/12.wav')"></li>
+        <li class="piano-keys white-key" data-list="13" onclick="playPianoSound('Sound/13.wav')"></li>
+        <li class="piano-keys black-key" data-list="14" onclick="playPianoSound('Sound/13.wav')"></li>
+        <li class="piano-keys white-key" data-list="15" onclick="playPianoSound('Sound/12.wav')"></li>
+        <li class="piano-keys black-key" data-list="16" onclick="playPianoSound('Sound/11.wav')"></li>
+        <li class="piano-keys white-key" data-list="17" onclick="playPianoSound('Sound/10.wav')"></li>
+        <li class="piano-keys black-key" data-list="18" onclick="playPianoSound('Sound/9.wav')"></li>
+        <li class="piano-keys white-key" data-list="19" onclick="playPianoSound('Sound/8.wav')"></li>
+        <li class="piano-keys white-key" data-list="20" onclick="playPianoSound('Sound/7.wav')"></li>
+        <li class="piano-keys black-key" data-list="21" onclick="playPianoSound('Sound/6.wav')"></li>
+        <li class="piano-keys white-key" data-list="22" onclick="playPianoSound('Sound/5.wav')"></li>
+        <li class="piano-keys black-key" data-list="23" onclick="playPianoSound('Sound/4.wav')"></li>
+        <li class="piano-keys white-key" data-list="24" onclick="playPianoSound('Sound/3.wav')"></li>
+            </ul>
+        </div>
+    </div>
+   
+
+    <script>
+        function playBellSound() {
+            var audio = new Audio('Sound/bell.mp3');
+            audio.play();
+            audio.addEventListener('ended', function() {
+                audio.remove(); 
+            });
+        }
+        function playDrumSound() {
+            var audio = new Audio('Sound/drum.mp3');
+            audio.play();
+            audio.addEventListener('ended', function() {
+                audio.remove(); 
+            });
+        }
+        function playPianoSound(soundFile) {
+            var audio = new Audio(soundFile);
+            audio.play();
+            audio.addEventListener('ended', function() {
+                audio.remove(); 
+            });
+        }
+
+    </script>
+    </body>
+</html>
