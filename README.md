@@ -1,7 +1,6 @@
 # High-School-Projects (Pure HTML/CSS/JavaScript)
 
-During 2015 to 2018, I had a vast interest in designing and writing code for websites. So, I began my journey using pure HTML, CSS, and some JavaScript to create applications from my mind. Although these were nothing special, they show how far I have come since the heyday of my first development time.
-I also tried Bootstrap and much more Advanced JavaScript during my high school years, which are available on different repos.
+From 2015 to 2018, I had a strong interest in designing and coding websites. I began my journey using pure HTML, CSS, and some JavaScript to create applications from scratch. Although these early projects were nothing special, they show how far I have come since my initial development days. During my high school years, I also explored Bootstrap and more advanced JavaScript, with my projects available in various repositories.
 
 ## 1. Documentation Page
 This page contains a documentary or informational content for a fictional character. It includes a navigation bar, image, and written information.
