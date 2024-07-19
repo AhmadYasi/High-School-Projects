@@ -1,0 +1,25 @@
+body, h1 {
+    text-align: center;
+}
+.body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+label {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+input {
+    max-width: 25%;
+    min-width: 25%;
+}
+button {
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: blanchedalmond;
+    border-color: yellow;
+    margin-top: 20px;
+}
