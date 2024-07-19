@@ -47,7 +47,9 @@ A basic survey page.
 A basic trubite page consisting the accomplishment of the legend.
 ![Screenshot 2024-05-02 203044](https://github.com/AhmadYasi/High-School-Projects/assets/130148111/82244976-6e44-4a85-95f3-a48b2dd6d604)
 
-
+## 11. Gradebook
+A basic grading calculator for three students (Morty, Jamshid, and Jake). It allows users to input scores for six subjects for each student, calculates their average scores, and then assigns a letter grade based on those averages.
+![Screenshot 2024-07-19 152156](https://github.com/user-attachments/assets/93172f54-1970-497e-aaa0-3e6216f9ef3f)
 
 
 - **Scripting Languages Used**:
