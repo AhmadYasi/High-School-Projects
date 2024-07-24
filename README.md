@@ -47,9 +47,13 @@ A basic trubite page consisting the accomplishment of the legend.
 ![Screenshot 2024-05-02 203044](https://github.com/AhmadYasi/High-School-Projects/assets/130148111/82244976-6e44-4a85-95f3-a48b2dd6d604)
 
 ## 11. Gradebook
-A basic grading calculator for three students (Morty, Jamshid, and Jake). It allows users to input scores for six subjects for each student, calculates their average scores, and then assigns a letter grade based on those averages.
+A basic grading calculator for three students (Morty, Jamshid, and Jake). It allows users to input scores for six subjects for each student, calculates their average scores, and then assigns a letter grade based on those averages. The use of javascript will be rampent after this one
 ![Screenshot 2024-07-19 152156](https://github.com/user-attachments/assets/93172f54-1970-497e-aaa0-3e6216f9ef3f)
 
-
+## 12. Calculator
+A basic simple calculator, doing operations such as addition, substraction, multiplication, division and modules. 
 - **Scripting Languages Used**:
+![Screenshot 2024-07-24 152932](https://github.com/user-attachments/assets/d330efdb-8b94-434a-b19d-04a02e1c7377)
+
+
 ![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
